@@ -10,15 +10,23 @@ using namespace std;
 
 void fillArray( int a[], int size, int &numberUsed);
 int dosomething(int a[], int size, int numberUsed, int sum);
+void somestringFunction( char cons_string[]);
+
 
 int main(){
-
   int someArray[max_size] , numbers, sumPar = 0;
-
+  char cons_stringPar[] = "Hello world";
+  char aStringPar[max_size];
 
   fillArray(someArray, max_size, numbers);
   dosomething(someArray, max_size, numbers, sumPar);
+  somestringFunction(cons_stringPar);
+
+  //cout << cons_stringPar;
+
+
   return 0;
+
 }
 
 void fillArray( int a[], int size, int &numberUsed){
@@ -47,4 +55,15 @@ int dosomething(int a[], int size, int numberUsed, int sum){
   }
     cout << sum << endl;
     cout << sum / size << endl;
+}
+
+void somestringFunction( char cons_string[]){
+
+
+  for(int i =0; i< strlen(cons_string); i++){
+    cout << cons_string[i];
+    
+  }
+
+  //cout << newstring << endl;
 }
