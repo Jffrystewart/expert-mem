@@ -22,7 +22,10 @@ int main(){
   dosomething(someArray, max_size, numbers, sumPar);
   somestringFunction(cons_stringPar);
 
-  //cout << cons_stringPar;
+  int x = 12;
+  ++x;
+  int y = x;
+  cout << y << endl;
 
 
   return 0;
@@ -62,7 +65,7 @@ void somestringFunction( char cons_string[]){
 
   for(int i =0; i< strlen(cons_string); i++){
     cout << cons_string[i];
-    
+
   }
 
   //cout << newstring << endl;
