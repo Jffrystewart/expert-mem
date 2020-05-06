@@ -36,10 +36,11 @@ int main(){
     case 1:
     cout << str << endl;
     shiftString4(str, numberOfBits);
-
+    break;
     case 2:
     cout << str << endl;
     shiftString6(str, numberOfBits);
+    break;
   }
   return 0;
 }
